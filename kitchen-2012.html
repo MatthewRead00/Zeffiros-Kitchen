@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Inside the Kitchen - 2012 - Zeffiro's</title>
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./css/styles.css" rel="stylesheet">
+
+    <!--Lightbox-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    <link href='simplelightbox-master/dist/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+
+    <!--Nice-Select Dropdown-->
+    <script src="./jquery-nice-select-1.1.0/js/jquery.js"></script>
+    <script src="./jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <link rel="stylesheet" href="./jquery-nice-select-1.1.0/css/nice-select.css">
+
+  </head>
+
+  <body>
+        <header>
+          <div class="container">
+              <img src="Images/Header for Other Pages.png" class="Banner img-fluid center-block" alt="">
+          </div>
+        <br />
+    
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarsResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="nav navbar-nav ml-auto navbar-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html" id="home">home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html" id="about">about</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu.html" id="menu">menu </a>
+                </li>
+                <p>&nbsp &nbsp</p>
+                <a class="logo" href="index.html" height="-100" width="-75">
+                    <img src="Images/Logo.png" alt="logo" id="logo" height="-100" width="-75">
+                </a>
+                <li class="nav-item active">
+                  <a class="nav-link" href="kitchen.html" id="kitchen">inside the kitchen
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html" id="contact">contact</a>
+                </li>
+              </ul>
+              <!--Hamburger Menu Links-->
+            <ul class="nav navbar-nav ml-auto">
+                <li class="hamburger-item">
+                  <a class="hamburger-link" href="index.html" id="home">home</a>
+                </li>
+                <p>&nbsp &nbsp</p>
+                <li class="hamburger-item">
+                  <a class="hamburger-link" href="about.html" id="about">about</a>
+                </li>
+                <p>&nbsp &nbsp</p>
+                <li class="hamburger-item">
+                  <a class="hamburger-link" href="menu.html" id="menu">menu</a>
+                </li>
+                <p>&nbsp &nbsp</p>
+                <li class="hamburger-item active">
+                    <a class="hamburger-link" href="kitchen.html" id="kitchen">inside the kitchen
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <p>&nbsp &nbsp</p>
+                <li class="hamburger-item">
+                    <a class="hamburger-link" href="contact.html" id="contact">contact</a>
+                </li>
+                <p>&nbsp &nbsp</p>
+            </ul>
+          </div>
+        </nav>
+        </header>
+
+        <br />
+
+        <div class="container kitchen-2012">
+
+            <br />
+            <h1 class="kitchen-header">2012</h1>
+            <br />
+
+            <p class="dropdown-head">SELECT A YEAR</p>
+
+            <select class="select" onchange="location = this.value;">
+                <option value="kitchen-2012.html">2012</option>
+                <option value="kitchen.html">2014</option>
+                <option value="kitchen-2013.html">2013</option>
+            </select>
+
+            <br />
+            <br />
+
+                <div class="gallery text-center">
+                    <a href="Images/kitchen1.png"><img src="Images/kitchen1.png" alt="" title=""/></a>
+                    <a href="Images/kitchen2.png"><img src="Images/kitchen2.png" alt="" title=""/></a>
+                    <a href="Images/kitchen3.png"><img src="Images/kitchen3.png" alt="" title=""/></a> <br />
+                    <a href="Images/kitchen4.png"><img src="Images/kitchen4.png" alt="" title=""/></a>
+                    <a href="Images/kitchen5.png"><img src="Images/kitchen5.png" alt="" title=""/></a>
+                    <a href="Images/kitchen6.png"><img src="Images/kitchen6.png" alt="" title=""/></a> <br />
+                </div>
+
+            <br />
+
+        </div>
+
+    <!--Success Modal Start-->
+    <div class="modal fade" id="successModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-primary">
+            <div class="modal-header">
+              <h4 class="success-modal-title">THANK YOU!</h4>
+            </div>
+            <div class="modal-body">
+    
+              <p class="success-description">Your request for a reservation has been sent. <br />
+                                              We will contact you as soon as possible.</p>
+    
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Go Back></button>
+    
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--Success Modal End-->
+
+</body>
+
+<!--Lightbox-->
+<script type="text/javascript" src="simplelightbox-master/dist/simple-lightbox.js"></script>
+<script>
+  $(function(){
+    var $gallery = $('.gallery a').simpleLightbox();
+
+    $gallery.on('show.simplelightbox', function(){
+      console.log('Requested for showing');
+    })
+    .on('shown.simplelightbox', function(){
+      console.log('Shown');
+    })
+    .on('close.simplelightbox', function(){
+      console.log('Requested for closing');
+    })
+    .on('closed.simplelightbox', function(){
+      console.log('Closed');
+    })
+    .on('change.simplelightbox', function(){
+      console.log('Requested for change');
+    })
+    .on('next.simplelightbox', function(){
+      console.log('Requested for next');
+    })
+    .on('prev.simplelightbox', function(){
+      console.log('Requested for prev');
+    })
+    .on('nextImageLoaded.simplelightbox', function(){
+      console.log('Next image loaded');
+    })
+    .on('prevImageLoaded.simplelightbox', function(){
+      console.log('Prev image loaded');
+    })
+    .on('changed.simplelightbox', function(){
+      console.log('Image changed');
+    })
+    .on('nextDone.simplelightbox', function(){
+      console.log('Image changed to next');
+    })
+    .on('prevDone.simplelightbox', function(){
+      console.log('Image changed to prev');
+    })
+    .on('error.simplelightbox', function(e){
+      console.log('No image found, go to the next/prev');
+      console.log(e);
+    });
+  });
+</script>
+
+<br />
+<br />
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+        <div class="container">
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h2 class="text-uppercase">Join our mailing list</h2>
+              <p class="footer-text">Learn more about our latest menus & promos</p>
+      
+              <!-- Form -->
+              <form class="form-inline">
+                  <input class="form-control form-control-sm mr-3 w-50" type="text">
+                  <i class="fas fa-search" aria-hidden="true"></i>
+      
+                  <button type="button" class="btn btn-dark" data-toggle="modal"
+                                  data-target="#successModal">
+                  SUBMIT></button>
+                  
+                </form>
+                <!-- Form -->
+      
+                </form>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+    
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+              <label class="header-info">ADDRESS</label>
+              <label class="info">1240 Grand Lake Road. <br />
+              Sydney, Nova Scotia</label>
+              <br />
+              <label class="header-info">TELEPHONE</label>
+              <label class="info">(902) 123-4567</label>
+              <br />
+              <label class="header-info">EMAIL</label>
+              <label class="info">zeffiros@nscc.ca</label>
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+        </div>
+      
+    </footer>
+      <!-- Footer -->
+
+      <!--Nice Select-->
+        <script>
+            $(document).ready(function() {
+            $('select').niceSelect();
+            });
+        </script>
+
+    <script>window.jQuery || document.write('<script src="./js/jquery-slim.min.js"><\/script>')</script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</html>

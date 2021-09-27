@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Home - Zeffiro's</title>
+
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){
+      i['GoogleAnalyticsObject']=r;i[r]=i[r]||
+    function(){
+      (i[r].q=i[r].q||[]).push(arguments)
+    },
+      i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })
+    (window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./css/styles.css" rel="stylesheet">
+
+    <!--Nice-Select Dropdown-->
+    <script src="./jquery-nice-select-1.1.0/js/jquery.js"></script>
+    <script src="./jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <link rel="stylesheet" href="./jquery-nice-select-1.1.0/css/nice-select.css">
+
+  </head>
+
+  <body>
+    
+    <header>
+      <div class="container">
+        <img src="Images/restaurant-interior.png" class="Banner img-fluid center-block" alt="">
+      </div>
+    <br />
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarsResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="nav navbar-nav ml-auto navbar-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html" id="home">home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" id="about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html" id="menu">menu </a>
+            </li>
+            <p>&nbsp &nbsp</p>
+            <a class="logo" href="index.html" height="-200" width="-75">
+                <img src="Images/Logo.png" alt="logo" id="logo" height="-200" width="-75">
+            </a>
+            <li class="nav-item">
+              <a class="nav-link" href="kitchen.html" id="kitchen">inside the kitchen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" id="contact">contact</a>
+            </li>
+          </ul>
+          <!--Hamburger Menu Links-->
+            <ul class="nav navbar-nav ml-auto">
+              <li class="hamburger-item active">
+                <a class="hamburger-link" href="index.html" id="home">home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <p>&nbsp &nbsp</p>
+              <li class="hamburger-item">
+                <a class="hamburger-link" href="about.html" id="about">about</a>
+              </li>
+              <p>&nbsp &nbsp</p>
+              <li class="hamburger-item">
+                <a class="hamburger-link" href="menu.html" id="menu">menu </a>
+              </li>
+              <p>&nbsp &nbsp</p>
+              <li class="hamburger-item">
+                  <a class="hamburger-link" href="kitchen.html" id="kitchen">inside the kitchen</a>
+              </li>
+              <p>&nbsp &nbsp</p>
+              <li class="hamburger-item">
+                  <a class="hamburger-link" href="contact.html" id="contact">contact</a>
+              </li>
+              <p>&nbsp &nbsp</p>
+          </ul>
+      </div>
+    </nav>
+    </header>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="container">
+      <button type="button" class="btn btn-dark float-right" data-toggle="modal"
+                              data-target="#myModal">
+      RESERVE A TABLE></button>
+    </div>
+
+    <!--Modal 1 Start-->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-primary">
+            <div class="modal-header">
+              <h4 class="modal-title">RESERVE A TABLE</h4>
+              <!--<button type="button" class="close" data-dismiss="modal"></button>-->
+            </div>
+            <div class="modal-body">
+
+                <form action="" method="post">
+        
+                    <label class="form-label">Name*:</label>
+                    <input type="text" name="name" size="15" value="" />
+
+                    <label class="form-label">Date*:</label>
+                    <input type="text" name="date" size="15" value="" /> <br />
+
+                    <label class="form-label">Email*:</label>
+                    <input type="text" name="email" size="15" value="" />
+
+                    <label class="form-label">Phone*:</label>
+                    <input type="text" name="phone" size="15" value="" /><br />
+
+                    <label class="form-label">Number of Guests*:</label>
+                    <input type="text" name="guests" size="4" value="" /><br />
+        
+                    <label class="form-label">Is this your first visit to Zeffiro's Restaurant?*:</label>
+
+                    <label class="form-label">YES</label>
+                    <input type="checkbox" name="yes" value="">
+
+                    <label class="form-label">NO</label>
+                    <input type="checkbox" name="no" value=""> <br />
+
+                    <button type="button" class="btn btn-dark" data-toggle="modal"
+                            data-target="#successModal">
+                    SUBMIT></button>
+
+                    <button type="button" class="close" data-dismiss="modal">Cancel</button>
+                </form>
+
+            </div>
+          </div>
+        </div>
+    </div>
+      <!--Modal 1 End-->
+
+<!--Modal 2 Start-->
+<div class="modal fade" id="successModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-primary">
+        <div class="modal-header">
+          <h4 class="success-modal-title">THANK YOU!</h4>
+        </div>
+        <div class="modal-body">
+
+          <p class="success-description">Your request for a reservation has been sent. <br />
+                                          We will contact you as soon as possible.</p>
+
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Go Back></button>
+
+        </div>
+      </div>
+    </div>
+</div>
+  <!--Modal 2 End-->
+  
+    <br />
+    <br />
+    <br />
+
+    </div>
+
+  </body>
+
+    <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <div class="container">
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h2 class="text-uppercase">Join our mailing list</h2>
+        <p class="footer-text">Learn more about our latest menus & promos</p>
+
+        <!-- Form -->
+        <form class="form-inline">
+            <input class="form-control form-control-sm mr-3 w-50" type="text">
+            <i class="fas fa-search" aria-hidden="true"></i>
+
+            <button type="button" class="btn btn-dark btn-submit" data-toggle="modal"
+                            data-target="#successModal">
+            SUBMIT></button>
+            
+          </form>
+          <!-- Form -->
+
+          </form>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+        <label class="header-info">ADDRESS</label>
+        <label class="info">1240 Grand Lake Road. <br />
+        Sydney, Nova Scotia</label>
+        <br />
+        <label class="header-info">TELEPHONE</label>
+        <label class="info">(902) 123-4567</label>
+        <br />
+        <label class="header-info">EMAIL</label>
+        <label class="info">zeffiros@nscc.ca</label>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+  </div>
+
+</footer>
+<!-- Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="./js/jquery-slim.min.js"><\/script>')</script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</html>
