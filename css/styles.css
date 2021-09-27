@@ -1,0 +1,258 @@
+body {
+  padding-top: 1rem;
+  background-image: url("background.png");
+  font-family: 12px, Helevtica Neue Light;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: #731112!important;
+}
+
+.nav-item {
+  text-align: center!important;
+  font-family: 30px, dense!important;
+  font-size: 20pt;
+}
+
+.active a {
+  color: #bda469!important;
+}
+
+a:hover {
+  color: #bda469 !important;
+}
+
+.active a:hover {
+  color: #bda469!important;
+}
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  height: 55px;
+}
+
+.page-footer {
+  background-color: #958f7b!important;
+  padding-bottom: 1rem;
+}
+
+.footer-text {
+  font-family: 17pt Helevtica Neue Light;
+  font-size: 20px;
+  color: #731112 !important;
+}
+
+.btn-dark {
+  background-color: #6c492f!important;
+  opacity: 75%;
+  font-family: 36px dense!important;
+  border-radius: 30px;
+}
+
+h2 {
+  font-family: 36pt dense !important;
+  color: #dcdad3 !important;
+  text-shadow: 1px 1px black;
+}
+
+.header-info {
+  font-family: 14pt Helevtica Neue Light;
+  text-align: right;
+  color: #e3d797!important;
+}
+
+.logo {
+  position: relative;
+  top: -50px;
+  margin: -40px auto;
+  background: #731112 !important;
+  border-radius: 100%;
+  display: block;
+}
+
+.info {
+  color: #f9f9f8 !important;
+  font-family: 14pt Helevetica Neue Light;
+}
+
+.modal-content {
+  background: #731112 !important;
+}
+
+.modal-title {
+  font-family: 36pt dense !important;
+  color: white !important;
+}
+
+.form-label {
+  font-family: 14pt Helevtica Neue Light;
+  color: white !important;
+}
+
+.submit-btn {
+  background-color: #6c492f!important;
+  font-family: dense!important;
+  text-align: right;
+}
+
+.close {
+  font-family: Helevtica Neue Light;
+  color: white !important;
+  font-size: 16px;
+}
+
+.about-header {
+  font-family: 36pt Dense;
+  color: white !important;
+}
+
+.about-description {
+  font-family: 36pt dense;
+  color: #c8bb76 !important;
+  font-size: 22px;
+}
+
+.about {
+  background: #731112 !important;
+}
+
+.success-modal-title {
+  font-family: 36pt dense !important;
+  color: #c8bb76 !important;
+}
+
+.success-description {
+  color: #f9f9f8 !important;
+  font-family: 14pt Helevetica Neue Light;
+}
+
+.history {
+  background-color: #958f7b !important;
+}
+
+.history-header {
+  font-family: 36pt Dense;
+  color: #731112 !important;
+}
+
+.history-description {
+  font-family: 36pt dense;
+  color: #674c38 !important;
+  font-size: 22px;
+}
+
+.history-article {
+  color: #f9f9f8 !important;
+  font-family: 14pt Helevetica Neue Light;
+  font-size: 16px;
+}
+
+.kitchen {
+  background: #731112 !important;
+}
+
+.kitchen-header {
+  font-family: 36pt Dense;
+  text-align: center;
+  color: white !important;
+}
+
+.dropdown-head {
+  font-family: 36pt dense;
+  color: white !important;
+  font-size: 22px;
+}
+
+.dropdown-head-history {
+  font-family: 36pt dense;
+  color: #731112 !important;
+  font-size: 22px;
+}
+
+.kitchen-2013 {
+  background: #8c6239 !important;
+}
+
+.kitchen-2012 {
+  background: #958f7b !important;
+}
+
+.contact {
+  background: #731112 !important;
+}
+
+.contact-header {
+  font-family: 36pt Dense;
+  color: white !important;
+}
+
+.contact-logo {
+  width: 190px;
+  height: 190px;;
+}
+
+.contact-info {
+  color: #c8bb76 !important;
+  font-family: 14pt Helevetica Neue Light;
+  font-size: 18px;
+}
+
+.menu {
+  background: #731112 !important;
+}
+
+.menu-header {
+  font-family: 36pt Dense;
+  color: white !important;
+  text-align: center;
+}
+
+.menu-description {
+  font-family: 36pt dense;
+  color: #c8bb76 !important;
+  font-size: 22px;
+  text-align: center;
+}
+.menu-updated {
+  font-family: 36pt dense;
+  color: #c8bb76 !important;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1500px) {
+  .nav-item { display: none;}
+  .logo { display: none;}
+  .navbar-toggler-icon { position: relative;}
+}
+
+@media only screen and (min-width: 1500px) {
+  .home {display: none;}
+  .hamburger-item { display: none;}
+  .hamburger-link { display: none;}
+}
+
+.hamburger-item {
+  text-align: center!important;
+  font-family: 30px, dense!important;
+  font-size: 20pt;
+}
+
+.hamburger-link {
+  color: white !important;
+}
+
+.banner {
+  height: auto;
+}
+
+.menu-picture {
+  height: 750px;
+  width: auto;
+}
